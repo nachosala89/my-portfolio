@@ -60,3 +60,19 @@
   color: #FFFFFF;
   margin: 0;
 }
+
+#illustration {
+  position: absolute;
+  bottom: -46px;
+  right: 0;
+}
+
+#social-links {
+  display: flex;
+  width: 200px;
+  height: 40px;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+}
+
