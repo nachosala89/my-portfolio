@@ -1,3 +1,13 @@
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 #appbar {
   position: absolute;
   top: 0;
@@ -8,11 +18,17 @@
   color: #fff;
 }
 
+a,
+a:hover,
+a:visited {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 #toolbar {
   position: absolute;
   bottom: 0;
   left: 24px;
-  display: flex;
   height: 40px;
   width: 327px;
   align-items: center;
@@ -20,9 +36,7 @@
 }
 
 #headline {
-  display: flex;
   box-sizing: border-box;
-  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 120px 24px;
@@ -32,6 +46,9 @@
   left: 0;
   top: 92px;
   background-color: #1c1a19;
+  background-image: url(./images/Illustration.png);
+  background-position: right 224px;
+  background-repeat: no-repeat;
 }
 
 #header-logo {
@@ -72,17 +89,12 @@
   margin: 0;
 }
 
-#illustration {
-  position: absolute;
-  bottom: -46px;
-  right: 0;
-}
-
 #social-links {
-  display: flex;
   width: 200px;
   height: 40px;
   justify-content: space-around;
   align-items: center;
   padding-top: 12px;
+  padding-left: 0;
+  list-style-type: none;
 }
