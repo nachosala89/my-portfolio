@@ -4,11 +4,16 @@
 
 > This project is proposed by Microverse to prepare our professional portfolio from the first week.
 
+![screenshot](./images/screenshot.png)
 
 ## Built With
 
 - HTML
 - CSS
+
+## Live Demo
+
+[My portfolio](https://nachosala89.github.io/my-portfolio/)
 
 ## Getting Started
 
