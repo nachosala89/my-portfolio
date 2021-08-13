@@ -2,7 +2,7 @@
 
 # My Portfolio
 
-> This project is proposed by Microverse to prepare our professional portfolio from the first week.
+> This project is proposed by Microverse to prepare our professional portfolio from the first week. For this first stage, I implemented the design for the main page of the mobile version. The design was obtained from [this Sigma template](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=1%3A1471). The main layout model used for this project is Flexbox.
 
 ![screenshot](./images/screenshot.png)
 
@@ -21,7 +21,7 @@ To get a local copy up and running follow these simple example steps:
 - Clone the repo to your computer.
 - Open index.html in your browser.
 
-👤 **Author1**
+👤 **Nacho Sala**
 
 - GitHub: [@nachosala89](https://github.com/nachosala89)
 - Twitter: [@nachosala89](https://twitter.com/nachosala89)
