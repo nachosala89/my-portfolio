@@ -2,9 +2,12 @@
 
 # My Portfolio
 
-> This project is proposed by Microverse to prepare our professional portfolio from the first week. For this first stage, I implemented the design for the main page of the mobile version. The design was obtained from [this Sigma template](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=1%3A1471). The main layout model used for this project is Flexbox.
+> This project is proposed by Microverse to prepare our professional portfolio from the first week. I implemented the design for the main page, works section and About me section of the mobile version. The design was obtained from [this Sigma template](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=1%3A1471). The main layout model used for this project is Flexbox and Grid.
 
 ![screenshot](./images/screenshot.png)
+![screenshot](./images/screenshot2.png)
+![screenshot](./images/screenshot3.png)
+![screenshot](./images/screenshot4.png)
 
 ## Built With
 

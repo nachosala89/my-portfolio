@@ -148,6 +148,15 @@ hr {
   line-height: 24px;
 }
 
+.skills-list li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  color: #fff;
+  margin: 16px;
+}
+
 #multipost li {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -184,7 +193,7 @@ button:active {
 }
 
 button:disabled {
-  background-color: #F4F1F0;
+  background-color: #f4f1f0;
   color: #5b5957;
 }
 
@@ -276,15 +285,6 @@ button:disabled {
 
 .skills-list {
   align-items: center;
-}
-
-.skills-list li {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  color: #fff;
-  margin: 16px;
 }
 
 #about-me-skills img {
