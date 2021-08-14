@@ -28,10 +28,10 @@ rel="stylesheet">
       <img src="./images/menu.png" alt="Menu">
     </nav>
 	</header>
-	<section id="headline" class="flex-column">
-		<h1 id="main-header">Hey There. <br> I'm Nacho</h1>
+	<section id="headline" class="flex-column dark-section">
+		<h1 class="main-header">Hey There. <br> I'm Nacho</h1>
 		<h2 id="sub-main-header">I am a Software Developer</h2>
-		<p id="main-paragraph">I can help you build a product, feature or website. Look through some of my 
+		<p class="main-paragraph">I can help you build a product, feature or website. Look through some of my 
 			work and experience! If you like what you see and have a project you need coded, 
 			don’t hesitate to contact me.
     </p>
@@ -149,7 +149,56 @@ rel="stylesheet">
     </div>
   </section>
   <section id="about-me">
-
+    <div id="about-me-main" class="flex-column dark-section">
+      <h1 class="main-header">About me</h1>
+      <p class="main-paragraph">Hello I’m a software developer! I can help you build a product, 
+        feature or website Look through some of my work and experience! If you like what you see 
+        and have a project you need coded, don’t hestiate to contact me.</p>
+      <button>Get My Resume</button>
+    </div>
+    <hr>
+    <div id="about-me-skills" class="flex-column">
+      <ul>
+        <li>
+          <div class="flex-row skills-type">
+            <img src="./images/lang-point.png" alt="">
+            <h4>Language</h4>
+          </div>
+          <ul class="skills-list flex-column">
+            <li>Javascript</li>
+            <li>Ruby</li>
+            <li>Html</li>
+            <li>Css</li>
+          </ul>
+        </li>
+        <li>
+          <div class="flex-row skills-type">
+            <img src="./images/framew-point.png" alt="">
+            <h4>Frameworks</h4>
+          </div>
+          <ul class="skills-list flex-column">
+            <li>Bootstrap</li>
+            <li>Ruby on Rails</li>
+            <li>RSPec</li>
+            <li>CapyBara</li>
+            <li>Selenium</li>
+          </ul>
+        </li>
+        <li>
+          <div class="flex-row skills-type">
+            <img src="./images/skills-point.png" alt="">
+            <h4>Skills</h4>
+          </div>
+          <ul class="skills-list flex-column">
+            <li>Codekit</li>
+            <li>Github</li>
+            <li>Codepen</li>
+            <li>Gitlab</li>
+            <li>Terminal</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </section>
 </body>
 </html>

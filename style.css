@@ -44,16 +44,19 @@ a:visited {
   justify-content: space-between;
 }
 
-#headline {
+.dark-section {
   box-sizing: border-box;
   justify-content: center;
   align-items: flex-start;
   padding: 120px 24px;
+}
+
+#headline {
   height: 590px;
-  background-color: #1c1a19;
   background-image: url(./images/Illustration.png);
   background-position: right 224px;
   background-repeat: no-repeat;
+  background-color: #1c1a19;
 }
 
 #header-logo {
@@ -63,7 +66,7 @@ a:visited {
   font-weight: bold;
 }
 
-#main-header {
+.main-header {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -84,7 +87,7 @@ a:visited {
   margin: 12px 0;
 }
 
-#main-paragraph {
+.main-paragraph {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -105,7 +108,7 @@ a:visited {
 #works {
   width: 327px;
   margin: auto;
-  padding-top: 120px;
+  padding: 120px 0;
 }
 
 #works-title {
@@ -115,6 +118,11 @@ a:visited {
   font-size: 40px;
   line-height: 52px;
   margin-bottom: 30px;
+}
+
+hr {
+  width: 327px;
+  margin: auto;
 }
 
 #multipost {
@@ -229,3 +237,56 @@ button:disabled {
   margin: 8px 12px 22px 0;
 }
 
+#about-me {
+  background-color: #1c1a19;
+  background-image: url(./images/Frame.png);
+  background-position: right 384px;
+  background-repeat: no-repeat;
+}
+
+#about-me-main {
+  height: 563px;
+  margin-bottom: 89px;
+}
+
+#about-me-main p {
+  padding: 27px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+#about-me-skills {
+  height: 1249px;
+  justify-content: center;
+}
+
+.skills-type {
+  align-items: center;
+  justify-content: center;
+  margin: 28px;
+}
+
+.skills-type h4 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.skills-list {
+  align-items: center;
+}
+
+.skills-list li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  color: #fff;
+  margin: 16px;
+}
+
+#about-me-skills img {
+  margin: 0 8px;
+}
