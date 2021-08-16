@@ -295,3 +295,7 @@ button:disabled {
 .float-skills {
   float: left;
 }
+
+.work-grid {
+  clear: left;
+}
