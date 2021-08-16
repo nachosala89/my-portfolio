@@ -228,6 +228,7 @@ button:disabled {
   line-height: 24px;
   color: #fff;
   padding: 4px 20px 0 16px;
+  clear: left;
 }
 
 #works-grid ul {
@@ -289,4 +290,8 @@ button:disabled {
 
 #about-me-skills img {
   margin: 0 8px;
+}
+
+.float-skills {
+  float: left;
 }
