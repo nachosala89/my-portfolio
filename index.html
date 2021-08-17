@@ -35,7 +35,7 @@ rel="stylesheet">
 			work and experience! If you like what you see and have a project you need coded, 
 			don’t hesitate to contact me.
     </p>
-    <ul id="social-links" class="flex-row">
+    <ul class="flex-row social-links">
       <li>
         <a href="https://github.com/nachosala89">
           <img src="./images/social-links/github.png" alt="Github">
@@ -200,12 +200,12 @@ rel="stylesheet">
       </ul>
     </div>
   </section>
-  <section id="contact-form">
-    <p>I'm always interested in hearing about new projects, 
+  <section id="contact-form" class="flex-column">
+    <p>I'm always <br>interested in hearing about new projects, 
       so if you'd like to chat please get in touch.</p>
     <form action="https://formspree.io/f/xzbykgyg" method="POST">
-      <ul>
-        <li>
+      <ul class="flex-column">
+        <li id="name-label">
           <label>
             <input type="text" id="name" name="name" placeholder="Full name" maxlength="30" 
             required>
@@ -219,12 +219,45 @@ rel="stylesheet">
         </li>
         <li>
           <hr>
-          <textarea name="message" id="message" cols="10" rows="5" 
+          <textarea name="message" id="message" cols="31" rows="5" 
           placeholder="Enter text here" maxlength="500" required></textarea>
         </li>
-        <button type="submit">Get in touch</button>
+        <li>
+          <button id="form-button" type="submit">Get in touch</button>
+        </li>
       </ul>
     </form>
   </section>
+  <hr>
+  <footer class="flex-column">
+    <ul class="flex-row social-links">
+      <li>
+        <a href="https://github.com/nachosala89">
+          <img src="./images/social-links/github2.png" alt="Github">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/juan-ignacio-sala">
+          <img src="./images/social-links/linkedin2.png" alt="LinkedIn">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/social-links/angelist2.png" alt="AngelList">
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/nachosala89">
+          <img src="./images/social-links/twitter2.png" alt="Twitter">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/social-links/medium2.png" alt="Medium">
+        </a>
+      </li>
+    </ul>
+    <div id="footer-line"></div>
+  </footer>
 </body>
 </html>
