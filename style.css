@@ -179,6 +179,7 @@ button {
   background-color: #ff6b00;
   padding: 12px;
   border: none;
+  cursor: pointer;
 }
 
 button:hover {
@@ -329,13 +330,8 @@ textarea {
   padding: 12px;
 }
 
-#contact-form ul {
-  justify-content: center;
-  align-items: center;
-}
-
-#name-label {
-  align-self: flex-start;
+#contact-form button {
+  align-self: center;
 }
 
 footer {
