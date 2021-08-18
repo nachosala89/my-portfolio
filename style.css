@@ -121,8 +121,9 @@ a:visited {
 }
 
 hr {
-  width: 327px;
-  margin: auto;
+  width: 100%;
+  margin: 0;
+  border: 1px solid #dfe1e6;
 }
 
 #multipost {
