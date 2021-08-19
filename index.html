@@ -23,18 +23,28 @@ rel="stylesheet">
 </head>
 <body>
 	<header id="appbar" class="flex-column">
-    <nav id="toolbar" class="flex-row"> 
+    <div id="toolbar" class="flex-row"> 
       <a href="#"><div id="header-logo">Nacho Sala</div></a>
-      <img src="./images/menu.png" alt="Menu">
-    </nav>
+      <nav>
+        <img src="./images/menu.png" alt="Menu" id="hamburger-icon">
+        <ul class="flex-row">
+          <a href="#works"><li>Portfolio</li></a>
+          <a href="#about-me"><li>About</li></a>
+          <a href="#contact-form"><li>Contact</li></a>
+          <a href="#"><li><img src="./images/mail.png" alt="Mail"></li></a>
+        </ul>
+      </nav>
+    </div>
 	</header>
 	<section id="headline" class="flex-column dark-section">
-		<h1 class="main-header">Hey There. <br> I'm Nacho</h1>
-		<h2 id="sub-main-header">I am a Software Developer</h2>
-		<p class="main-paragraph">I can help you build a product, feature or website. Look through some of my 
+		<div id="headline-text">
+      <h1 class="main-header">Hey There. <br> I'm Nacho</h1>
+      <h2 id="sub-main-header">I am a Software Developer</h2>
+      <p class="main-paragraph">I can help you build a product, feature or website. Look through some of my 
 			work and experience! If you like what you see and have a project you need coded, 
 			don’t hesitate to contact me.
-    </p>
+      </p>
+    </div>
     <ul class="flex-row social-links">
       <li>
         <a href="https://github.com/nachosala89">

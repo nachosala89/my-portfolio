@@ -44,6 +44,10 @@ a:visited {
   justify-content: space-between;
 }
 
+nav li {
+  display: none;
+}
+
 .dark-section {
   box-sizing: border-box;
   justify-content: center;
@@ -68,7 +72,6 @@ a:visited {
 
 .main-header {
   font-family: 'Crete Round', sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 56px;
   line-height: 64px;
@@ -80,7 +83,6 @@ a:visited {
 #sub-main-header {
   height: 27px;
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 24px;
   color: #fff5e1;
@@ -89,7 +91,6 @@ a:visited {
 
 .main-paragraph {
   font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -344,4 +345,93 @@ footer {
   background-color: #0d151e;
   border-radius: 10px;
   margin: 20px 0;
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    width: auto;
+  }
+
+  #hamburger-icon {
+    display: none;
+  }
+
+  #header-logo {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 10px;
+  }
+
+  #appbar {
+    justify-content: center;
+    height: 72px;
+  }
+
+  #toolbar {
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 10%;
+  }
+
+  nav {
+    width: 30%;
+  }
+
+  nav ul {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav li {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0 10px;
+  }
+
+  #headline {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 798px;
+    background-image: url(./images/Illustration-desktop.png);
+    background-position: right -70px;
+  }
+
+  #headline-text {
+    width: 40%;
+    order: 2;
+  }
+
+  #headline ul {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 200px;
+    width: 9%;
+    margin-left: 1%;
+  }
+
+  .main-header {
+    font-size: 72px;
+    line-height: 81px;
+    margin: 24px 0;
+  }
+
+  #sub-main-header {
+    font-size: 32px;
+    line-height: 44px;
+    font-family: 'Inter', sans-serif;
+    margin: 24px 0;
+  }
+
+  .main-paragraph {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    margin: 24px 0;
+  }
 }
