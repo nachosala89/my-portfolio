@@ -37,7 +37,7 @@ rel="stylesheet">
     </div>
 	</header>
 	<section id="headline" class="flex-column dark-section">
-		<div id="headline-text">
+		<div id="headline-texts">
       <h1 class="main-header">Hey There. <br> I'm Nacho</h1>
       <h2 id="sub-main-header">I am a Software Developer</h2>
       <p class="main-paragraph">I can help you build a product, feature or website. Look through some of my 
@@ -73,21 +73,27 @@ rel="stylesheet">
       </li>
     </ul>
 	</section>
-  <section id="works">
-    <h2 id="works-title">My recent works</h2>
-    <hr>
+  <section id="works" class="flex-column">
+    <div class="flex-row">
+      <h2 id="works-title">My recent works</h2>
+      <div id="hr-desk"></div>
+    </div>
+    <hr id="hr-mob">
     <article id="multipost">
       <img src="./images/multipost.png" alt="Project Image">
-      <h3>Multi-Post Stories</h3>
-      <p>A daily selection of privately personalized reads; no accounts or sign-ups 
-        required. has been the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a standard dummy text.</p>
-        <ul class="flex-row">
-          <li>html</li>
-          <li>bootstrap</li>
-          <li>Ruby</li>
-        </ul>
-        <button type="button">See Project</button>
+      <div id="multipost-text" class="flex-column">
+        <h3>Multi-Post Stories</h3>
+        <p>A daily selection of privately personalized reads; no accounts or sign-ups 
+          required. has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a standard dummy text.</p>
+          <ul class="flex-row">
+            <li>css</li>
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+          <button type="button">See Project</button>
+        </div>
     </article>
     <div id="works-grid">
       <article class="flex-column">
@@ -166,9 +172,9 @@ rel="stylesheet">
         and have a project you need coded, don’t hestiate to contact me.</p>
       <button>Get My Resume</button>
     </div>
-    <hr>
+    <hr id="about-line">
     <div id="about-me-skills" class="flex-column">
-      <ul>
+      <ul id="skills-list">
         <li>
           <div class="flex-row skills-type">
             <img src="./images/lang-point.png" alt="">
@@ -211,7 +217,7 @@ rel="stylesheet">
     </div>
   </section>
   <section id="contact-form" class="flex-column">
-    <p>I'm always <br>interested in hearing about new projects, 
+    <p>I'm always interested in hearing about new projects, 
       so if you'd like to chat please get in touch.</p>
     <form action="https://formspree.io/f/xzbykgyg" method="POST" class="flex-column">
       <input type="text" id="name" name="name" placeholder="Full name" maxlength="30" required>

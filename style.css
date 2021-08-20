@@ -107,24 +107,28 @@ nav li {
 }
 
 #works {
-  width: 327px;
+  width: 87.2%;
   margin: auto;
   padding: 120px 0;
 }
 
 #works-title {
   font-family: 'Crete Round', sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 40px;
   line-height: 52px;
   margin-bottom: 30px;
+  color: #091e42;
 }
 
 hr {
   width: 100%;
   margin: 0;
-  border: 1px solid #dfe1e6;
+  color: #212121;
+}
+
+#hr-desk {
+  display: none;
 }
 
 #multipost {
@@ -132,9 +136,18 @@ hr {
   color: #091e42;
 }
 
+#multipost img {
+  width: 100%;
+  background-color: #f2883f;
+  padding: 10px 0;
+}
+
+#multipost-text {
+  align-items: flex-start;
+}
+
 #multipost h3 {
   font-family: 'Crete Round', sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 32px;
   line-height: 44px;
@@ -144,7 +157,6 @@ hr {
 
 #multipost p {
   font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -215,7 +227,6 @@ button:disabled {
 
 #works-grid h3 {
   font-family: 'Crete Round', sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 32px;
   line-height: 44px;
@@ -347,7 +358,7 @@ footer {
   margin: 20px 0;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
   body {
     width: auto;
   }
@@ -402,7 +413,7 @@ footer {
     background-position: right -70px;
   }
 
-  #headline-text {
+  #headline-texts {
     width: 40%;
     order: 2;
   }
@@ -433,5 +444,138 @@ footer {
     font-size: 20px;
     line-height: 32px;
     margin: 24px 0;
+  }
+
+  #hr-mob {
+    display: none;
+  }
+
+  #hr-desk {
+    display: block;
+    height: 1px;
+    width: 90%;
+    margin: 0 5%;
+    align-self: center;
+    background-color: #212121;
+  }
+  
+  #works {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #works-title {
+    white-space: nowrap;
+    margin: 0;
+  }
+
+  #multipost {
+    display: flex;
+  }
+
+  #multipost-text {
+    margin-left: 24px;
+  }
+  
+  #multipost img {
+    width: 57%;
+  }
+
+  #multipost h3 {
+    margin-top: 0;
+  }
+
+  #multipost p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  #multipost ul {
+    margin: 12px 0;
+  }
+
+  #works-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 37px;
+  }
+
+  #works-grid article {
+    background-size: cover;
+    height: 435px;
+  }
+
+  #about-me {
+    background-image: url(./images/Frame2.png);
+    background-position: right 99px;
+    background-repeat: no-repeat;
+  }
+
+  #about-me-main {
+    width: 42%;
+    margin-left: 10%;
+    height: 591px;
+  }
+
+  #about-me-main h1 {
+    margin: 0;
+  }
+
+  #about-line {
+    width: 80%;
+    margin: 0 10%;
+  }
+
+  #about-me-skills {
+    height: 604px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10%;
+  }
+
+  #skills-list li {
+    margin-right: 1fr;
+  }
+
+  .skills-type {
+    justify-content: flex-start;
+  }
+
+  .skills-list {
+    align-items: flex-start;
+  }
+
+  #contact-form {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 130px;
+    height: 484px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #contact-form p {
+    width: 40%;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 52px;
+    color: #262626;
+  }
+
+  #contact-form button {
+    align-self: flex-start;
+  }
+
+  form {
+    width: 55%;
+  }
+
+  #footer-line {
+    display: none;
   }
 }
