@@ -458,7 +458,7 @@ footer {
     align-self: center;
     background-color: #212121;
   }
-  
+
   #works {
     margin-left: 10%;
     margin-right: 10%;
@@ -476,7 +476,7 @@ footer {
   #multipost-text {
     margin-left: 24px;
   }
-  
+
   #multipost img {
     width: 57%;
   }
@@ -536,10 +536,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 10%;
-  }
-
-  #skills-list li {
-    margin-right: 1fr;
   }
 
   .skills-type {
