@@ -4,7 +4,7 @@
 }
 
 body {
-  width: 375px;
+  min-width: 375px;
 }
 
 .flex-row {
@@ -37,9 +37,8 @@ a:visited {
 }
 
 #toolbar {
-  padding-left: 24px;
+  margin: 0 7%;
   height: 40px;
-  width: 327px;
   align-items: center;
   justify-content: space-between;
 }
@@ -358,6 +357,14 @@ footer {
   margin: 20px 0;
 }
 
+@media only screen and (min-width: 600px) {
+  #works-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 37px;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   body {
     width: auto;
@@ -383,6 +390,7 @@ footer {
     justify-content: space-between;
     width: 80%;
     margin: 0 10%;
+    padding-left: 0;
   }
 
   nav {
@@ -413,6 +421,10 @@ footer {
     background-position: right -70px;
   }
 
+  .dark-section {
+    padding-left: 0;
+  }
+
   #headline-texts {
     width: 40%;
     order: 2;
@@ -422,8 +434,8 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     height: 200px;
-    width: 9%;
-    margin-left: 1%;
+    width: 7%;
+    margin-left: 3%;
   }
 
   .main-header {
@@ -462,6 +474,7 @@ footer {
   #works {
     margin-left: 10%;
     margin-right: 10%;
+    width: 80%;
   }
 
   #works-title {
@@ -478,7 +491,7 @@ footer {
   }
 
   #multipost img {
-    width: 57%;
+    width: 56%;
   }
 
   #multipost h3 {
