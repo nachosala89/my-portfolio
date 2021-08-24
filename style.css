@@ -56,7 +56,7 @@ nav li {
 }
 
 #headline {
-  height: 590px;
+  min-height: 590px;
   background-image: url(./images/Illustration.png);
   background-position: right 224px;
   background-repeat: no-repeat;
@@ -111,6 +111,7 @@ nav li {
   font-size: 24px;
   color: #fff5e1;
   margin: 12px 0;
+  white-space: nowrap;
 }
 
 .main-paragraph {
@@ -254,8 +255,9 @@ button:disabled {
   font-weight: normal;
   font-size: 32px;
   line-height: 44px;
-  color: #fff;
+  color: rgb(255, 255, 255);
   padding-left: 16px;
+  margin-top: 50px;
 }
 
 #works-grid p {
@@ -279,7 +281,7 @@ button:disabled {
   font-size: 15px;
   line-height: 20px;
   padding: 10px 12px;
-  background: rgba(255, 255, 255, 0.24);
+  background: rgba(0, 0, 0, 0.5);
   color: #fff;
   margin: 8px 12px 22px 0;
 }
@@ -312,7 +314,7 @@ button:disabled {
   margin: 28px;
 }
 
-.skills-type h4 {
+.skills-type h3 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -330,7 +332,7 @@ button:disabled {
 }
 
 #contact-form {
-  height: 848px;
+  min-height: 848px;
   justify-content: center;
   padding: 0 24px;
 }
@@ -540,7 +542,8 @@ footer {
 
   #works-grid article {
     background-size: cover;
-    height: 435px;
+    height: auto;
+    min-height: 435px;
   }
 
   #about-me {
@@ -588,7 +591,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 130px;
-    height: 484px;
+    min-height: 484px;
     margin-left: 10%;
     margin-right: 10%;
   }
