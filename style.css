@@ -171,6 +171,15 @@ hr {
   align-items: flex-start;
 }
 
+.skills-type h3 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
 #multipost h3 {
   font-family: 'Crete Round', sans-serif;
   font-weight: normal;
@@ -312,15 +321,6 @@ button:disabled {
   align-items: center;
   justify-content: center;
   margin: 28px;
-}
-
-.skills-type h3 {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 44px;
-  color: #fff;
 }
 
 .skills-list {
