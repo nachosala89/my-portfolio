@@ -86,18 +86,13 @@ nav li {
 .sm-view li {
   display: flex;
   border-bottom: 2px solid #fff;
-  border-bottom-color: rgb(255, 255, 255);
   padding-bottom: 15px;
   padding-left: 20px;
-  border-color: #6F6C6B;
+  border-color: #6f6c6b;
   width: calc(100% - 20px);
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
-}
-
-.sm-view li:last-child {
-  display: none;
 }
 
 #hamburger-icon {
@@ -259,6 +254,10 @@ hr {
   font-size: 22px;
   color: #fff;
   margin: 16px;
+}
+
+.sm-view li:last-child {
+  display: none;
 }
 
 #multipost li {
