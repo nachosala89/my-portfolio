@@ -207,6 +207,43 @@ hr {
   display: none;
 }
 
+.work-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%
+  margin: auto;
+  background-color: #fff;
+}
+
+.work-popup h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172B4D;
+  order: 1;
+}
+
+.work-popup ul {
+  order: 2;
+}
+
+.work-popup img {
+  order 3;
+}
+
+.work-popup p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  order: 4;
+}
+
+.work-popup button {
+  order: 5;
+}
+
 #multipost {
   margin-top: 80px;
   color: #091e42;
