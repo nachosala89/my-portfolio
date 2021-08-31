@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-width: 375px;
 }
@@ -94,6 +98,10 @@ nav li {
 
 .sm-view li:last-child {
   display: none;
+}
+
+#hamburger-icon {
+  cursor: pointer;
 }
 
 .dark-section {
