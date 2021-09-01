@@ -60,14 +60,18 @@ function addMainContent(container, work) {
     ul.appendChild(li);
   });
   container.appendChild(ul);
+}
 
+function addButton(container, work) {
   let newButton = document.createElement('button');
   newButton.setAttribute('type', 'button');
   newButton.setAttribute('id', `btn-${work.id}`);
   newButton.textContent = 'See Proyect';
   container.appendChild(newButton);
 }
+
 addMainContent(divText, mainWork);
+addButton(divText, mainWork);
 
 const grid = document.querySelector('#works-grid');
 
@@ -80,7 +84,7 @@ for (let i = 1; i <= 6; i+= 1) {
     name: 'Professional Art Printing Data',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     image: {
-      src: './images/multipost.png',
+      src: './images/project-image.png',
       alt: 'Project image',
     },
     technologies: ['html', 'bootstrap', 'Ruby'],
@@ -92,15 +96,46 @@ for (let i = 1; i <= 6; i+= 1) {
   let article = document.createElement('article');
   article.classList.add('flex-column');
   addMainContent(article, work);
+  addButton(article, work);
   
   grid.appendChild(article);
 }
 
-function displayProject(i) {
+function displayProject(works, i) {
+  let article = document.createElement('article');
+  article.classList.add('work-popup');
+  let img = document.createElement('img');
+  img.setAttribute('src', works[i].image.src);
+  img.setAttribute('alt', works[i].image.alt);
+  article.appendChild(img);
   
+  addMainContent(article, works[i]);
+  
+  let liveButton = document.createElement('button');
+  liveButton.setAttribute('type', 'button');
+  liveButton.setAttribute('id', `btn-${i}`);
+  liveButton.textContent = 'See Live';
+  let img1 = document.createElement('img');
+  img1.setAttribute('src', './images/live-icon.png');
+  img1.setAttribute('alt', 'See live');
+  liveButton.appendChild(img1);
+  article.appendChild(liveButton);
+  
+  let sourceButton = document.createElement('button');
+  sourceButton.setAttribute('type', 'button');
+  sourceButton.setAttribute('id', `btn-${i}`);
+  sourceButton.textContent = 'See Source';
+  let img2 = document.createElement('img');
+  img2.setAttribute('src', './images/source-icon.png');
+  img2.setAttribute('alt', 'See Source');
+  sourceButton.appendChild(img2);
+  article.appendChild(sourceButton);
+
+  const body = document.querySelector('body');
+  body.appendChild(article);
 }
 
 const workButtons = document.querySelectorAll('#works button');
 for (let i = 0; i < workButtons.length; i += 1) {
-  menuList[i].addEventListener('click', displayProject(i));
+  workButtons[i].addEventListener('click', function(){displayProject(works, i)});
 }
