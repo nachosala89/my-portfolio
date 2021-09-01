@@ -100,7 +100,7 @@ for (let i = 1; i <= 6; i+= 1) {
   article.classList.add('flex-column');
   addMainContent(article, work);
   addButton(article, work);
-  
+
   grid.appendChild(article);
 }
 
@@ -109,9 +109,12 @@ function closePopup(article) {
 }
 
 function displayProject(works, i) {
-  let article = document.createElement('article');
+  let modal = document.createElement('article');
+  modal.classList.add('modal');
+  let article = document.createElement('div');
   article.classList.add('work-popup');
-  
+  modal.appendChild(article);
+
   let title = document.createElement('h3');
   title.textContent = works[i].name;
   article.appendChild(title);
@@ -141,7 +144,7 @@ function displayProject(works, i) {
   img.setAttribute('src', works[i].image.src);
   img.setAttribute('alt', works[i].image.alt);
   outerDiv.appendChild(img);
-  
+
   const innerDiv = document.createElement('div');
   innerDiv.classList.add('flex-column');
   innerDiv.setAttribute('id', 'inner-div');
@@ -161,7 +164,7 @@ function displayProject(works, i) {
   img1.setAttribute('alt', 'See live');
   liveButton.appendChild(img1);
   buttons.appendChild(liveButton);
-  
+
   let sourceButton = document.createElement('button');
   sourceButton.setAttribute('type', 'button');
   sourceButton.setAttribute('id', `btn-${i}`);
@@ -176,7 +179,7 @@ function displayProject(works, i) {
   article.appendChild(outerDiv);
 
   const body = document.querySelector('body');
-  body.appendChild(article);
+  body.appendChild(modal);
 }
 
 const workButtons = document.querySelectorAll('#works button');
