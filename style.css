@@ -219,7 +219,7 @@ hr {
   margin: auto 5%;
   background-color: #fff;
   padding: 16px 5%;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 .work-popup h3 {
@@ -754,5 +754,23 @@ footer {
 
   #footer-line {
     display: none;
+  }
+
+  #outer-div {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  #inner-div {
+    flex: 1;
+  }
+
+  #outer-div img {
+    flex: 0 2 50%;
+  }
+
+  #popup-buttons {
+    justify-content: flex-start;
+    gap: 10px;
   }
 }
