@@ -7,10 +7,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  min-width: 375px;
-}
-
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -209,11 +205,13 @@ hr {
 
 .work-popup {
   position: fixed;
-  top: 0;
+  top: 30px;
   left: 0;
-  width: 90%
-  margin: auto;
+  width: 80%;
+  margin: auto 5%;
   background-color: #fff;
+  padding: 16px 5%;
+  overflow-y: scroll;
 }
 
 .work-popup h3 {
@@ -222,26 +220,68 @@ hr {
   font-size: 32px;
   line-height: 44px;
   color: #172B4D;
-  order: 1;
+  height: 86px;
 }
 
-.work-popup ul {
-  order: 2;
+.work-popup li {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3C3A39;
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+  margin-right: 12px;
+  margin-bottom: 15px;
 }
 
 .work-popup img {
-  order 3;
+  width: 100%;
+  
 }
 
 .work-popup p {
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  order: 4;
+  font-size: 2vh;
+  line-height: 3vh;
+  color: #344563;
+  margin-bottom: 10px;
 }
 
-.work-popup button {
-  order: 5;
+#close-popup {
+  position: absolute;
+  top: 26px;
+  right: 10px;
+  width: 18px;
+  padding: 6px;
+} 
+
+#outer-div {
+  height: 68vh;
+  justify-content: space-between;
+}
+
+#inner-div {
+  justify-content: space-between;
+}
+
+#popup-buttons {
+  height: 48px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#popup-buttons button {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  padding: 0 inherit;
+}
+
+#popup-buttons img {
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
 }
 
 #multipost {
