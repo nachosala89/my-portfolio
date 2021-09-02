@@ -245,7 +245,6 @@ hr {
 
 .work-popup img {
   width: 100%;
-  max-width: 490px;
 }
 
 .work-popup p {
@@ -253,7 +252,8 @@ hr {
   font-size: 2vh;
   line-height: 3vh;
   color: #344563;
-  margin-bottom: 10px;
+  margin-top: 24px;
+  margin-bottom: 16px;
 }
 
 #close-popup {
@@ -267,7 +267,6 @@ hr {
 }
 
 #outer-div {
-  height: 68vh;
   justify-content: space-between;
 }
 
@@ -647,11 +646,11 @@ footer {
 
   .work-popup p {
     line-height: 4vh;
+    margin-top: 0;
   }
 
   .work-popup img {
     width: 60%;
-    max-width: 60%;
   }
 
   #works {
