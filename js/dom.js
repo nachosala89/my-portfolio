@@ -11,12 +11,18 @@ function switchMenu() {
   }
 }
 
+function removeMenu() {
+  if (nav.classList.contains('sm-view')) {
+    switchMenu();
+  }
+}
+
 const menuList = document.querySelectorAll('nav li');
 
 button.addEventListener('click', switchMenu);
 
 for (let i = 0; i < menuList.length; i += 1) {
-  menuList[i].addEventListener('click', switchMenu);
+  menuList[i].addEventListener('click', removeMenu);
 }
 
 const mainWork = {
@@ -104,15 +110,15 @@ for (let i = 1; i <= 6; i+= 1) {
   grid.appendChild(article);
 }
 
-function closePopup(article) {
-  article.classList.remove('work-popup');
+function closePopup(popup) {
+  popup.remove();
 }
 
 function displayProject(works, i) {
-  let modal = document.createElement('article');
-  modal.classList.add('modal');
-  let article = document.createElement('div');
+  let article = document.createElement('article');
   article.classList.add('work-popup');
+  let modal = document.createElement('div');
+  modal.classList.add('modal');
   modal.appendChild(article);
 
   let title = document.createElement('h3');
@@ -123,7 +129,7 @@ function displayProject(works, i) {
   cancel.setAttribute('src', './images/cancel.png');
   cancel.setAttribute('alt', 'Close Popup');
   cancel.setAttribute('id', 'close-popup');
-  cancel.addEventListener('click', function(){closePopup(article)});
+  cancel.addEventListener('click', function(){closePopup(modal)});
   article.appendChild(cancel);
 
   let ul = document.createElement('ul');
