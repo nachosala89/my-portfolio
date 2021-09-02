@@ -245,7 +245,7 @@ hr {
 
 .work-popup img {
   width: 100%;
-  aspect-ratio: 3 / 2;
+  max-width: 490px;
 }
 
 .work-popup p {
@@ -649,6 +649,11 @@ footer {
     line-height: 4vh;
   }
 
+  .work-popup img {
+    width: 60%;
+    max-width: 60%;
+  }
+
   #works {
     margin-left: 10%;
     margin-right: 10%;
@@ -769,16 +774,15 @@ footer {
 
   #outer-div {
     flex-direction: row;
+    align-items: flex-start;
     margin-top: 48px;
     gap: 2%;
+    height: auto;
   }
 
   #inner-div {
+    align-self: stretch;
     flex: 1;
-  }
-
-  #outer-div img {
-    flex: 0 2 50%;
   }
 
   #popup-buttons {

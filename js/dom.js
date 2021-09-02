@@ -25,24 +25,104 @@ for (let i = 0; i < menuList.length; i += 1) {
   menuList[i].addEventListener('click', removeMenu);
 }
 
-const mainWork = {
-  id: 0,
-  name: 'Multi-Post Stories',
-  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-  fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  image: {
-    src: './images/multipost.png',
-    alt: 'Project image',
+const works = [
+  {
+    id: 0,
+    name: 'Multi-Post Stories',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    image: {
+      src: './images/multipost.png',
+      alt: 'Project image',
+    },
+    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
+    linkLive: '#',
+    linkSource: '#',
   },
-  technologies: ['css', 'html', 'bootstrap', 'Ruby'],
-  linkLive: '#',
-  linkSource: '#',
-};
+  {
+    id: 1,
+    name: 'Professional Art Printing Data',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    image: {
+      src: './images/project-image.png',
+      alt: 'Project image',
+    },
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    linkLive: '#',
+    linkSource: '#',
+  },
+  {
+    id: 2,
+    name: 'Professional Art Printing Data',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    image: {
+      src: './images/project-image.png',
+      alt: 'Project image',
+    },
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    linkLive: '#',
+    linkSource: '#',
+  },
+  {
+    id: 3,
+    name: 'Professional Art Printing Data',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    image: {
+      src: './images/project-image.png',
+      alt: 'Project image',
+    },
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    linkLive: '#',
+    linkSource: '#',
+  },
+  {
+    id: 4,
+    name: 'Professional Art Printing Data',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    image: {
+      src: './images/project-image.png',
+      alt: 'Project image',
+    },
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    linkLive: '#',
+    linkSource: '#',
+  },
+  {
+    id: 5,
+    name: 'Professional Art Printing Data',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    image: {
+      src: './images/project-image.png',
+      alt: 'Project image',
+    },
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    linkLive: '#',
+    linkSource: '#',
+  },
+  {
+    id: 6,
+    name: 'Professional Art Printing Data',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    image: {
+      src: './images/project-image.png',
+      alt: 'Project image',
+    },
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    linkLive: '#',
+    linkSource: '#',
+  },
+];
 
 const multipost = document.querySelector('#multipost');
 const img = document.createElement('img');
-img.setAttribute('src', mainWork.image.src);
-img.setAttribute('alt', mainWork.image.alt);
+img.setAttribute('src', works[0].image.src);
+img.setAttribute('alt', works[0].image.alt);
 multipost.appendChild(img);
 
 const divText = document.createElement('div');
@@ -78,34 +158,16 @@ function addButton(container, work) {
   container.appendChild(newButton);
 }
 
-addMainContent(divText, mainWork);
-addButton(divText, mainWork);
+addMainContent(divText, works[0]);
+addButton(divText, works[0]);
 
 const grid = document.querySelector('#works-grid');
 
-const works = [];
-works.push(mainWork);
-
 for (let i = 1; i <= 6; i += 1) {
-  const work = {
-    id: i,
-    name: 'Professional Art Printing Data',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    image: {
-      src: './images/project-image.png',
-      alt: 'Project image',
-    },
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    linkLive: '#',
-    linkSource: '#',
-  };
-  works.push(work);
-
   const article = document.createElement('article');
   article.classList.add('flex-column');
-  addMainContent(article, work);
-  addButton(article, work);
+  addMainContent(article, works[i]);
+  addButton(article, works[i]);
 
   grid.appendChild(article);
 }
