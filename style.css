@@ -7,8 +7,13 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  min-width: 375px;
+.modal {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  backdrop-filter: blur(4px);
 }
 
 .flex-row {
@@ -207,6 +212,80 @@ hr {
   display: none;
 }
 
+.work-popup {
+  position: fixed;
+  top: 30px;
+  left: 0;
+  width: 80%;
+  margin: auto 5%;
+  background-color: #fff;
+  padding: 16px 5%;
+}
+
+.work-popup h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  height: 86px;
+}
+
+.work-popup li {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3c3a39;
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+  margin-right: 12px;
+  margin-bottom: 15px;
+}
+
+.work-popup img {
+  width: 100%;
+}
+
+.work-popup p {
+  font-family: 'Inter', sans-serif;
+  font-size: 2vh;
+  line-height: 3vh;
+  color: #344563;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+#close-popup {
+  position: absolute;
+  top: 26px;
+  right: 10px;
+  width: 18px;
+  aspect-ratio: 1 / 1;
+  padding: 6px;
+  cursor: pointer;
+}
+
+#outer-div {
+  justify-content: space-between;
+}
+
+#inner-div {
+  justify-content: space-between;
+}
+
+#popup-buttons {
+  height: 48px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#popup-buttons img {
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+}
+
 #multipost {
   margin-top: 80px;
   color: #091e42;
@@ -299,6 +378,12 @@ button:active {
 button:disabled {
   background-color: #f4f1f0;
   color: #5b5957;
+}
+
+#popup-buttons button {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
 }
 
 #works-grid {
@@ -553,6 +638,21 @@ footer {
     background-color: #212121;
   }
 
+  .work-popup h3 {
+    height: 50px;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: normal;
+  }
+
+  .work-popup p {
+    line-height: 4vh;
+    margin-top: 0;
+  }
+
+  .work-popup img {
+    width: 60%;
+  }
+
   #works {
     margin-left: 10%;
     margin-right: 10%;
@@ -669,5 +769,27 @@ footer {
 
   #footer-line {
     display: none;
+  }
+
+  #outer-div {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 48px;
+    gap: 2%;
+    height: auto;
+  }
+
+  #inner-div {
+    align-self: stretch;
+    flex: 1;
+  }
+
+  #popup-buttons {
+    justify-content: flex-start;
+    gap: 14px;
+  }
+
+  .work-popup {
+    padding: 25px 2%;
   }
 }
