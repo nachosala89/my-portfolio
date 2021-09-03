@@ -92,7 +92,7 @@
       <div id="hr-desk"></div>
     </div>
     <hr id="hr-mob">
-    <article id="multipost"> <!-- class="work-popup" -->
+    <article id="multipost">
     </article>
     <div id="works-grid">  
     </div>
@@ -153,12 +153,15 @@
     <p>I'm always interested in hearing about new projects,
       so if you'd like to chat please get in touch.</p>
     <form action="https://formspree.io/f/xzbykgyg" method="POST" class="flex-column">
-      <input type="text" id="name" name="name" placeholder="Full name" maxlength="30" required>
+      <input type="text" id="name" name="name" placeholder="Full name" maxlength="30">
+      <small class="error" id="name-error"></small>
       <hr>
-      <input type="email" id="email" name="email" placeholder="Email address" required>
+      <input type="text" id="email" name="email" placeholder="Email address">
+      <small class="error" id="email-error"></small>
       <hr>
-      <textarea name="message" id="message" cols="31" rows="5" placeholder="Enter text here" maxlength="500"
-        required></textarea>
+      <textarea name="message" id="message" cols="31" rows="5" placeholder="Enter text here" maxlength="500">
+      </textarea>
+      <small class="error" id="message-error"></small>
       <button id="form-button" type="submit">Get in touch</button>
     </form>
   </section>
@@ -195,6 +198,7 @@
   </footer>
 
   <script src="./js/dom.js"></script>
+  <script src="./js/form.js"></script>
 </body>
 
 </html>
