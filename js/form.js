@@ -62,3 +62,30 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
+
+const nameField = document.querySelector('#name');
+const emailField = document.querySelector('#email');
+const messageField = document.querySelector('#message');
+
+function preserveData() {
+  const formObject = {
+    name: nameField.value,
+    email: emailField.value,
+    message: messageField.value,
+  };
+
+  localStorage.setItem('formObject', JSON.stringify(formObject));
+}
+
+nameField.addEventListener('change', preserveData);
+emailField.addEventListener('change', preserveData);
+messageField.addEventListener('change', preserveData);
+
+if (localStorage.getItem('formObject') !== null) {
+  window.addEventListener('load', () => {
+    const formObject = JSON.parse(localStorage.getItem('formObject'));
+    nameField.value = formObject.name;
+    emailField.value = formObject.email;
+    messageField.value = formObject.message;
+  });
+}
