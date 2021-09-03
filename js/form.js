@@ -26,8 +26,7 @@ function valEmail(email) {
     showMessage('email-error', 'Please enter your email');
     return false;
   }
-  const emailRegex =
-    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const lowercaseRegex = /[^A-Z]+@[^A-Z]+/;
   const emailValue = email.value.trim();
   if (!emailRegex.test(emailValue)) {
@@ -51,15 +50,15 @@ function valMessage(message) {
   return true;
 }
 
-const form = document.querySelector("form");
-form.addEventListener('submit', function (event) {
+const form = document.querySelector('form');
+form.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  let nameValid = valName(form.elements["name"]);
-  let emailValid = valEmail(form.elements["email"]);
-  let messageValid = valMessage(form.elements["message"]);
+  const nameValid = valName(form.elements.name);
+  const emailValid = valEmail(form.elements.email);
+  const messageValid = valMessage(form.elements.message);
 
   if (nameValid && emailValid && messageValid) {
-    alert("Demo only. No form was posted.");
+    form.submit();
   }
 });
