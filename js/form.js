@@ -70,7 +70,7 @@ const messageField = document.querySelector('#message');
 function preserveData() {
   const formObject = {
     name: nameField.value,
-    email: nameField.value,
+    email: emailField.value,
     message: messageField.value,
   };
 
