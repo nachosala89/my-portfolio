@@ -28,16 +28,16 @@ for (let i = 0; i < menuList.length; i += 1) {
 const works = [
   {
     id: 0,
-    name: 'Multi-Post Stories',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    name: 'The Crypto Cave',
+    description: "Website to display some data about the most important crypto currencies in real time.",
+    fullDescription: "Website to display some data about the most important crypto currencies in real time. The data is consumed from the API https://docs.coincap.io/. The currencies can be filter by the price change in the last 24 hours or by position in the ranking. The design was based on this template.",
     image: {
-      src: './images/multipost.png',
+      src: './images/screenshot-crypto.png',
       alt: 'Project image',
     },
-    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
-    linkLive: '#',
-    linkSource: '#',
+    technologies: ['css', 'html', 'javascript'],
+    linkLive: 'https://thecryptocave.netlify.app/',
+    linkSource: 'https://github.com/nachosala89/cryptocurrencies',
   },
   {
     id: 1,
