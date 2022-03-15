@@ -29,8 +29,8 @@ const works = [
   {
     id: 0,
     name: 'The Crypto Cave',
-    description: "Website to display some data about the most important crypto currencies in real time.",
-    fullDescription: "Website to display some data about the most important crypto currencies in real time. The data is consumed from the API https://docs.coincap.io/. The currencies can be filter by the price change in the last 24 hours or by position in the ranking. The design was based on this template.",
+    description: "Website to display some data about the most important cryptocurrencies in real time.",
+    fullDescription: "Website to display some data about the most important cryptocurrencies in real time. The data is consumed from the API https://docs.coincap.io/. The currencies can be filter by the price change in the last 24 hours or by position in the ranking. The design was based on this template.",
     image: {
       src: './images/screenshot-crypto.png',
       alt: 'Project image',

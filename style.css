@@ -293,7 +293,9 @@ hr {
 
 #multipost img {
   width: 100%;
-  background-color: #f2883f;
+  height: 80vh;
+  object-fit: cover;
+  object-position: 100% 0;
   padding: 10px 0;
 }
 
