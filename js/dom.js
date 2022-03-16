@@ -28,94 +28,94 @@ for (let i = 0; i < menuList.length; i += 1) {
 const works = [
   {
     id: 0,
+    name: 'Recipes App',
+    description: "This app allows the users to manage different types of food and recipes, view other's recipes and generate a shopping list.",
+    fullDescription: "This app allows the users to manage different types of food and recipes, view other's recipes and generate a shopping list. Made with Ruby on Rails.",
+    image: {
+      src: './images/projects/recipes.png',
+      alt: 'Project image',
+    },
+    technologies: ['Bootstrap', 'Ruby on Rails'],
+    linkLive: 'https://recipe-app-nacho.herokuapp.com/',
+    linkSource: 'https://github.com/nachosala89/recipe-app-rails',
+  },
+  {
+    id: 1,
+    name: 'Expobavio',
+    description: "Website for a rural exhibition that took place in my town (Bavio, Argentina) every year before Covid.",
+    fullDescription: "Website for a rural exhibition that took place in my town (Bavio, Argentina) every year before Covid.",
+    image: {
+      src: './images/projects/expobavio.png',
+      alt: 'Project image',
+    },
+    technologies: ['Bootstrap', 'JavaScript'],
+    linkLive: 'https://nachosala89.github.io/agro-expo/',
+    linkSource: 'https://github.com/nachosala89/agro-expo',
+  },
+  {
+    id: 2,
+    name: "Space Traveler's Hub",
+    description: "In this website we worked with real live data from the SpaceX API. Our task was to build a web app for a company that provides commercial and scientific space travel services.",
+    fullDescription: "In this website we worked with real live data from the SpaceX API. Our task was to build a web app for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.",
+    image: {
+      src: './images/projects/space-travelers.png',
+      alt: 'Project image',
+    },
+    technologies: ['JavaScript', 'Bootstrap', 'React'],
+    linkLive: 'https://youthful-lichterman-4505b6.netlify.app/',
+    linkSource: 'https://github.com/DyaryRaoof/space-travelers-hub',
+  },
+  {
+    id: 3,
     name: 'The Crypto Cave',
     description: "Website to display some data about the most important cryptocurrencies in real time.",
     fullDescription: "Website to display some data about the most important cryptocurrencies in real time. The data is consumed from the API https://docs.coincap.io/. The currencies can be filter by the price change in the last 24 hours or by position in the ranking. The design was based on this template.",
     image: {
-      src: './images/screenshot-crypto.png',
+      src: './images/projects/screenshot-crypto.png',
       alt: 'Project image',
     },
-    technologies: ['css', 'html', 'javascript'],
+    technologies: ['JavaScript', 'React', 'Bootstrap'],
     linkLive: 'https://thecryptocave.netlify.app/',
     linkSource: 'https://github.com/nachosala89/cryptocurrencies',
   },
   {
-    id: 1,
-    name: 'Professional Art Printing Data',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    image: {
-      src: './images/project-image.png',
-      alt: 'Project image',
-    },
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    linkLive: '#',
-    linkSource: '#',
-  },
-  {
-    id: 2,
-    name: 'Professional Art Printing Data',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    image: {
-      src: './images/project-image.png',
-      alt: 'Project image',
-    },
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    linkLive: '#',
-    linkSource: '#',
-  },
-  {
-    id: 3,
-    name: 'Professional Art Printing Data',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    image: {
-      src: './images/project-image.png',
-      alt: 'Project image',
-    },
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    linkLive: '#',
-    linkSource: '#',
-  },
-  {
     id: 4,
-    name: 'Professional Art Printing Data',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    name: 'Breaking Bad Store',
+    description: "This app shows the characters of the world-famous series Breaking Bad.",
+    fullDescription: "This app shows the characters of the world-famous series Breaking Bad. It consumes two API: One to get the data about the Breaking Bad characters, and another to access and modify the data about comments and likes for the displayed content.",
     image: {
-      src: './images/project-image.png',
+      src: './images/projects/breaking-bad.png',
       alt: 'Project image',
     },
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    linkLive: '#',
-    linkSource: '#',
+    technologies: ['Bootstrap', 'Javascript'],
+    linkLive: 'https://wikitelmex.github.io/kanban-capstone/',
+    linkSource: 'https://github.com/nachosala89/breaking-bad-app',
   },
   {
     id: 5,
-    name: 'Professional Art Printing Data',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    name: 'Lodging App',
+    description: "This app allows the user to reserve a room in a hotel in an easy way.",
+    fullDescription: "This app allows the user to reserve a room in a hotel in an easy way. The API was created with Ruby on Rails and the front-end with React.",
     image: {
-      src: './images/project-image.png',
+      src: './images/projects/lodging.png',
       alt: 'Project image',
     },
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    linkLive: '#',
-    linkSource: '#',
+    technologies: ['Bootstrap', 'Rails', 'React'],
+    linkLive: 'https://goofy-panini-7f9108.netlify.app/',
+    linkSource: 'https://github.com/nachosala89/lodging-app-backend',
   },
   {
     id: 6,
-    name: 'Professional Art Printing Data',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    fullDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    name: 'Leaderboard',
+    description: "In this leaderboard the user can dynamically add, remove, and store scores.",
+    fullDescription: "In this leaderboard the user can dynamically add, remove, and store scores. I used Webpack to manage the different modules. All data is preserved thanks to the external Leaderboard API service.",
     image: {
-      src: './images/project-image.png',
+      src: './images/projects/leaderboard.png',
       alt: 'Project image',
     },
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    linkLive: '#',
-    linkSource: '#',
+    technologies: ['JavaScript', 'Webpack'],
+    linkLive: 'https://nachosala89.github.io/leaderboard/dist/',
+    linkSource: 'https://github.com/nachosala89/leaderboard',
   },
 ];
 
@@ -164,12 +164,19 @@ addButton(divText, works[0]);
 const grid = document.querySelector('#works-grid');
 
 for (let i = 1; i <= 6; i += 1) {
+  const backImage = document.createElement('div');
+  backImage.classList.add('back-img');
+  backImage.style.backgroundImage = `url(${works[i].image.src})`;
   const article = document.createElement('article');
   article.classList.add('flex-column');
   addMainContent(article, works[i]);
   addButton(article, works[i]);
 
-  grid.appendChild(article);
+  const div = document.createElement('div');
+  div.classList.add('article-container');
+  div.appendChild(article);
+  div.appendChild(backImage);
+  grid.appendChild(div);
 }
 
 function closePopup(popup) {
