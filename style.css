@@ -661,6 +661,12 @@ footer {
     width: 60%;
   }
 
+  .popup-img {
+    height: 60vh;
+    object-fit: cover;
+    object-position: 100% 0;
+  }
+
   #works {
     margin-left: 10%;
     margin-right: 10%;

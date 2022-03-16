@@ -209,6 +209,7 @@ function displayProject(works, i) {
   outerDiv.setAttribute('id', 'outer-div');
 
   const img = document.createElement('img');
+  img.classList.add('popup-img');
   img.setAttribute('src', works[i].image.src);
   img.setAttribute('alt', works[i].image.alt);
   outerDiv.appendChild(img);
@@ -231,7 +232,10 @@ function displayProject(works, i) {
   img1.setAttribute('src', './images/live-icon.png');
   img1.setAttribute('alt', 'See live');
   liveButton.appendChild(img1);
-  buttons.appendChild(liveButton);
+  const liveLink = document.createElement('a');
+  liveLink.setAttribute('href', works[i].linkLive);
+  liveLink.appendChild(liveButton);
+  buttons.appendChild(liveLink);
 
   const sourceButton = document.createElement('button');
   sourceButton.setAttribute('type', 'button');
@@ -241,7 +245,10 @@ function displayProject(works, i) {
   img2.setAttribute('src', './images/source-icon.png');
   img2.setAttribute('alt', 'See Source');
   sourceButton.appendChild(img2);
-  buttons.appendChild(sourceButton);
+  const sourceLink = document.createElement('a');
+  sourceLink.setAttribute('href', works[i].linkSource);
+  sourceLink.appendChild(sourceButton);
+  buttons.appendChild(sourceLink);
   innerDiv.appendChild(buttons);
   outerDiv.appendChild(innerDiv);
   article.appendChild(outerDiv);
