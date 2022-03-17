@@ -42,8 +42,8 @@ const works = [
   {
     id: 1,
     name: 'Expobavio',
-    description: "Website for a rural exhibition that took place in my town (Bavio, Argentina) every year before Covid.",
-    fullDescription: "Website for a rural exhibition that took place in my town (Bavio, Argentina) every year before Covid.",
+    description: 'Website for a rural exhibition that took place in my town (Bavio, Argentina) every year before Covid.',
+    fullDescription: 'Website for a rural exhibition that took place in my town (Bavio, Argentina) every year before Covid.',
     image: {
       src: './images/projects/expobavio.png',
       alt: 'Project image',
@@ -55,8 +55,8 @@ const works = [
   {
     id: 2,
     name: "Space Traveler's Hub",
-    description: "In this website we worked with real live data from the SpaceX API. Our task was to build a web app for a company that provides commercial and scientific space travel services.",
-    fullDescription: "In this website we worked with real live data from the SpaceX API. Our task was to build a web app for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.",
+    description: 'In this website we worked with real live data from the SpaceX API. Our task was to build a web app for a company that provides commercial and scientific space travel services.',
+    fullDescription: 'In this website we worked with real live data from the SpaceX API. Our task was to build a web app for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
     image: {
       src: './images/projects/space-travelers.png',
       alt: 'Project image',
@@ -68,8 +68,8 @@ const works = [
   {
     id: 3,
     name: 'The Crypto Cave',
-    description: "Website to display some data about the most important cryptocurrencies in real time.",
-    fullDescription: "Website to display some data about the most important cryptocurrencies in real time. The data is consumed from the API https://docs.coincap.io/. The currencies can be filter by the price change in the last 24 hours or by position in the ranking. The design was based on this template.",
+    description: 'Website to display some data about the most important cryptocurrencies in real time.',
+    fullDescription: 'Website to display some data about the most important cryptocurrencies in real time. The data is consumed from the API https://docs.coincap.io/. The currencies can be filter by the price change in the last 24 hours or by position in the ranking. The design was based on this template.',
     image: {
       src: './images/projects/screenshot-crypto.png',
       alt: 'Project image',
@@ -81,8 +81,8 @@ const works = [
   {
     id: 4,
     name: 'Breaking Bad Store',
-    description: "This app shows the characters of the world-famous series Breaking Bad.",
-    fullDescription: "This app shows the characters of the world-famous series Breaking Bad. It consumes two API: One to get the data about the Breaking Bad characters, and another to access and modify the data about comments and likes for the displayed content.",
+    description: 'This app shows the characters of the world-famous series Breaking Bad.',
+    fullDescription: 'This app shows the characters of the world-famous series Breaking Bad. It consumes two API: One to get the data about the Breaking Bad characters, and another to access and modify the data about comments and likes for the displayed content.',
     image: {
       src: './images/projects/breaking-bad.png',
       alt: 'Project image',
@@ -94,8 +94,8 @@ const works = [
   {
     id: 5,
     name: 'Lodging App',
-    description: "This app allows the user to reserve a room in a hotel in an easy way.",
-    fullDescription: "This app allows the user to reserve a room in a hotel in an easy way. The API was created with Ruby on Rails and the front-end with React.",
+    description: 'This app allows the user to reserve a room in a hotel in an easy way.',
+    fullDescription: 'This app allows the user to reserve a room in a hotel in an easy way. The API was created with Ruby on Rails and the front-end with React.',
     image: {
       src: './images/projects/lodging.png',
       alt: 'Project image',
@@ -107,8 +107,8 @@ const works = [
   {
     id: 6,
     name: 'Leaderboard',
-    description: "In this leaderboard the user can dynamically add, remove, and store scores.",
-    fullDescription: "In this leaderboard the user can dynamically add, remove, and store scores. I used Webpack to manage the different modules. All data is preserved thanks to the external Leaderboard API service.",
+    description: 'In this leaderboard the user can dynamically add, remove, and store scores.',
+    fullDescription: 'In this leaderboard the user can dynamically add, remove, and store scores. I used Webpack to manage the different modules. All data is preserved thanks to the external Leaderboard API service.',
     image: {
       src: './images/projects/leaderboard.png',
       alt: 'Project image',
