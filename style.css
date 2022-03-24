@@ -587,6 +587,10 @@ footer {
     margin: 0 10px;
   }
 
+  nav li:hover {
+    color: #e05304;
+  }
+
   #headline {
     flex-direction: row;
     justify-content: flex-start;
